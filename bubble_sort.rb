@@ -9,7 +9,7 @@ def bubble_sort(nums)
     swaps = 0
     nums.each_with_index do |num, i|
       test = []
-      if i < nums.size - 1
+      if i < loop_num - 1
         test << nums.values_at(i, i+1)
         if (test[0][0] > test[0][1])
           test[0].reverse!
